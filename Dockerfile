@@ -13,7 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
          libjpeg-dev \
          libpng-dev &&\
      rm -rf /var/lib/apt/lists/*
-RUN apt-get install --yes python3-openslide zip libgl1-mesa-glx libgl1-mesa-dev
+#RUN apt-get install --yes python3-openslide zip libgl1-mesa-glx libgl1-mesa-dev
+RUN apt-get install openslide-tools python-openslide
 
 
 # ENV PYTHON_VERSION=3.
